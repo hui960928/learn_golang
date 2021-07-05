@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
-func main()  {
-	fmt.Println("hello")
+func main() {
+	a := int64(10)
+	b := strconv.FormatInt(a, 10)
+	fmt.Println(b)
 }
